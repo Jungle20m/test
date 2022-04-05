@@ -19,8 +19,6 @@ func main() {
 
 	logger.InitLogger()
 
-	logger.ProcessLog.Info().Msg("hello anh em")
-
 	database.ConnectMongo()
 
 	app.Use(recover.New())
